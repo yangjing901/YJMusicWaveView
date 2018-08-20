@@ -10,7 +10,6 @@
 
 @interface YJMusicWaveView () <UIScrollViewDelegate>
 
-
 @end
 
 @implementation YJMusicWaveView {
