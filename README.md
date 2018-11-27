@@ -1,6 +1,6 @@
 # YJMusicWaveView
 
-## 效果图
+## 效果图:
   ![Image text](https://github.com/yangjing901/YJMusicWaveView/blob/master/YJMoreActionSheet.gif)
 
 ## 原理：
