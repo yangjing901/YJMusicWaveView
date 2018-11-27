@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "YJMusicWaveView.h"
 
+#define kScreenWidth            CGRectGetWidth([UIScreen mainScreen].bounds)
+#define kScreenHeight           CGRectGetHeight([UIScreen mainScreen].bounds)
+
 @interface ViewController ()
 
 @end
@@ -18,10 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     self.view.backgroundColor = [UIColor blackColor];
     
-    YJMusicWaveView *waveView = [[YJMusicWaveView alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height/2-25, [UIScreen mainScreen].bounds.size.width, 50)];
+    YJMusicWaveView *waveView = [[YJMusicWaveView alloc] initWithFrame:CGRectMake(0, kScreenHeight/2-25, kScreenWidth, 50)];
     [self.view addSubview:waveView];
     
     [waveView startAnimation];
