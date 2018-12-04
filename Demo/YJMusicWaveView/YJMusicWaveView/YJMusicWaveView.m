@@ -37,7 +37,7 @@
     
     UIImage *image3 = [UIImage imageNamed:@"pic_yinlang_blue"];
     _maskLayer = [CALayer new];
-    _maskLayer.frame = CGRectMake(0, 0, _scrollView.contentOffset.x, 50);
+    _maskLayer.frame = CGRectMake(-(_scrollView.contentOffset.x)/2, 0, _scrollView.contentOffset.x, 50);
     _maskLayer.anchorPoint = CGPointMake(0, 0.5);//单独使用bounds动画，大小改变，中心点不变，需要调整锚点使蒙层的锚点在(0,0.5)位置（默认锚点为(0.5, 0.5)）
     _maskLayer.backgroundColor = [UIColor colorWithPatternImage:image3].CGColor;//这种方法绘制背景色比较耗内存，图片尽量小点
     [_scrollView.layer addSublayer:_maskLayer];
